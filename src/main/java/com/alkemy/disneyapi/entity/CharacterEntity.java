@@ -25,6 +25,6 @@ public class CharacterEntity {
 
     private String story;
 
-    @ManyToMany(mappedBy = "characters", cascade = CascadeType.ALL)
+    @ManyToMany(mappedBy = "characters", fetch = FetchType.EAGER)
     private Set<MediaEntity> medias = new HashSet<>();
 }

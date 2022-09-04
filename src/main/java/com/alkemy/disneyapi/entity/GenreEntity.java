@@ -24,7 +24,4 @@ public class GenreEntity {
 
     private boolean deleted = Boolean.FALSE;
 
-    @OneToMany(mappedBy = "genre", cascade = CascadeType.ALL)
-    private Set<MediaEntity> medias = new HashSet<>();
-
 }
