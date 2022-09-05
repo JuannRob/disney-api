@@ -21,9 +21,9 @@ public class MediaEntity {
 
     private String title;
 
-    @Column(name = "release_date")
+    @Column(name = "creation_date")
     @DateTimeFormat(pattern = "yyyy/MM/dd")
-    private LocalDate releaseDate;
+    private LocalDate creationDate;
 
     private Long rating;
 
